@@ -1,104 +1,321 @@
-Privacy Policy for SecureSets
-Last Updated: November 5, 2025
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for SecureSets - A privacy-first, offline-only workout tracking application">
+    <title>Privacy Policy - SecureSets</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-Introduction
-SecureSets ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how our mobile application handles your information.
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
 
-Data Collection
-We do not collect, store, or transmit any personal data.
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
 
-SecureSets is designed as a 100% offline application. All data you enter into the app remains exclusively on your device and is never transmitted to our servers or any third-party services.
+        header {
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
 
-What data stays on your device:
-Items you create
-Settings and preferences (theme, language)
-Any other data you input into the app
-What we DO NOT collect:
-Personal information (name, email, phone number)
-Location data
-Usage analytics
-Device identifiers
-Crash reports
-Any other user data
-Data Storage
-All data is stored locally on your device using:
+        h1 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
 
-SQLite - For structured data (encrypted by your device's operating system)
-SecureStore - For sensitive data (uses iOS Keychain and Android Keystore)
-AsyncStorage - For preferences and settings
-Your device's operating system provides encryption for stored data. We do not implement additional encryption layers.
+        .last-updated {
+            color: #666;
+            font-size: 0.9em;
+            font-style: italic;
+        }
 
-Data Sharing
-We do not share any data because we do not collect any data.
+        h2 {
+            color: #007bff;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
 
-There is no data transmission to:
+        h3 {
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
 
-Our servers (we don't have any)
-Third-party analytics services
-Cloud backup services (unless you enable device-level backups)
-Note: Google AdMob displays ads and may collect data for ad serving purposes. This data is collected by Google, not by us. See Google's Privacy Policy for details.
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
 
-Third-Party Services
-SecureSets integrates with the following third-party service:
+        strong {
+            color: #000;
+        }
 
-Google AdMob
-Purpose: Display advertisements to support the app
-Data collected by AdMob: AdMob may collect device identifiers and usage data for ad serving. Please see Google's Privacy Policy for details.
-Your control: You can remove ads by purchasing the "Remove Ads" option in Settings.
-The app:
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
 
-Does not use analytics SDKs
-Does not use social media integrations
-Requires internet connectivity only for displaying ads
-Children's Privacy
-SecureSets is safe for users of all ages. Since we do not collect any data, there are no special considerations for children under 13 (or any age).
+        li {
+            margin-bottom: 8px;
+        }
 
-Deletion
-Since all data is stored locally on your device, you can delete all data by: Uninstalling the app
+        a {
+            color: #007bff;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
+        }
 
-There is no data on our servers to delete.
+        a:hover {
+            border-bottom: 1px solid #007bff;
+        }
 
-Data Retention
-Data is retained on your device indefinitely until you choose to delete it or uninstall the app.
+        .highlight-box {
+            background-color: #e7f3ff;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
 
-Your Rights
-Since we do not collect any data, typical data rights (access, rectification, deletion, portability) are not applicable. However, you have complete control over your data as it resides entirely on your device.
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
 
-Changes to This Privacy Policy
-We may update this Privacy Policy from time to time. We will notify you of any changes by:
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
 
-Updating the "Last Updated" date at the top of this policy
-Displaying a notice in the app (for significant changes)
-Internet Permissions
-SecureSets requires internet permission for the following purposes:
+        .summary {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
 
-Displaying advertisements via Google AdMob
-Your workout data and personal information remain offline and are never transmitted over the internet.
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
 
-Security
-While we do not collect data, we take the security of your local data seriously:
+            h1 {
+                font-size: 2em;
+            }
 
-Data is stored using platform-specific secure storage APIs
-We follow security best practices in our code
-We do not introduce vulnerabilities that could expose your local data
-Contact Us
-If you have questions about this Privacy Policy, please contact us:
+            h2 {
+                font-size: 1.5em;
+            }
 
-Email: lunavasoftware@gmail.com
-Legal Compliance
-This app complies with:
+            h3 {
+                font-size: 1.2em;
+            }
+        }
 
-GDPR (General Data Protection Regulation) - EU
-CCPA (California Consumer Privacy Act) - USA
-PIPEDA (Personal Information Protection and Electronic Documents Act) - Canada
-Other applicable privacy laws
-Compliance is straightforward because we do not collect any personal data.
+        @media print {
+            body {
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy for SecureSets</h1>
+            <p class="last-updated"><strong>Last Updated:</strong> November 5, 2025</p>
+        </header>
 
-App Store Requirements
-This privacy policy satisfies the requirements of:
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>SecureSets ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how our mobile application handles your information.</p>
+        </section>
 
-Google Play Store - Data Safety section
-Apple App Store - App Privacy Details
-Both stores require privacy policies even for apps that don't collect data.
+        <section id="data-collection">
+            <h2>Data Collection</h2>
+            <div class="highlight-box">
+                <strong>We do not collect, store, or transmit any personal data.</strong>
+            </div>
+            <p>SecureSets is designed as a 100% offline application. All data you enter into the app remains exclusively on your device and is never transmitted to our servers or any third-party services.</p>
 
-Summary: SecureSets is a privacy-first, offline-only application. We do not collect, store, transmit, or share any of your data. Everything stays on your device, under your control.
+            <h3>What data stays on your device:</h3>
+            <ul>
+                <li>Items you create</li>
+                <li>Settings and preferences (theme, language)</li>
+                <li>Any other data you input into the app</li>
+            </ul>
+
+            <h3>What we DO NOT collect:</h3>
+            <ul>
+                <li>Personal information (name, email, phone number)</li>
+                <li>Location data</li>
+                <li>Usage analytics</li>
+                <li>Device identifiers</li>
+                <li>Crash reports</li>
+                <li>Any other user data</li>
+            </ul>
+        </section>
+
+        <section id="data-storage">
+            <h2>Data Storage</h2>
+            <p>All data is stored locally on your device using:</p>
+            <ul>
+                <li><strong>SQLite</strong> - For structured data (encrypted by your device's operating system)</li>
+                <li><strong>SecureStore</strong> - For sensitive data (uses iOS Keychain and Android Keystore)</li>
+                <li><strong>AsyncStorage</strong> - For preferences and settings</li>
+            </ul>
+            <p>Your device's operating system provides encryption for stored data. We do not implement additional encryption layers.</p>
+        </section>
+
+        <section id="data-sharing">
+            <h2>Data Sharing</h2>
+            <div class="highlight-box">
+                <strong>We do not share any data because we do not collect any data.</strong>
+            </div>
+            <p>There is no data transmission to:</p>
+            <ul>
+                <li>Our servers (we don't have any)</li>
+                <li>Third-party analytics services</li>
+                <li>Cloud backup services (unless you enable device-level backups)</li>
+            </ul>
+            <p><strong>Note:</strong> Google AdMob displays ads and may collect data for ad serving purposes. This data is collected by Google, not by us. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> for details.</p>
+        </section>
+
+        <section id="third-party-services">
+            <h2>Third-Party Services</h2>
+            <p>SecureSets integrates with the following third-party service:</p>
+
+            <h3>Google AdMob</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Display advertisements to support the app</li>
+                <li><strong>Data collected by AdMob:</strong> AdMob may collect device identifiers and usage data for ad serving. Please see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> for details.</li>
+                <li><strong>Your control:</strong> You can remove ads by purchasing the "Remove Ads" option in Settings.</li>
+            </ul>
+
+            <p>The app:</p>
+            <ul>
+                <li>Does not use analytics SDKs</li>
+                <li>Does not use social media integrations</li>
+                <li>Requires internet connectivity only for displaying ads</li>
+            </ul>
+        </section>
+
+        <section id="childrens-privacy">
+            <h2>Children's Privacy</h2>
+            <p>SecureSets is safe for users of all ages. Since we do not collect any data, there are no special considerations for children under 13 (or any age).</p>
+
+            <h3>Deletion</h3>
+            <p>Since all data is stored locally on your device, you can delete all data by uninstalling the app.</p>
+            <p>There is no data on our servers to delete.</p>
+        </section>
+
+        <section id="data-retention">
+            <h2>Data Retention</h2>
+            <p>Data is retained on your device indefinitely until you choose to delete it or uninstall the app.</p>
+        </section>
+
+        <section id="your-rights">
+            <h2>Your Rights</h2>
+            <p>Since we do not collect any data, typical data rights (access, rectification, deletion, portability) are not applicable. However, you have complete control over your data as it resides entirely on your device.</p>
+        </section>
+
+        <section id="changes">
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+            <ul>
+                <li>Updating the "Last Updated" date at the top of this policy</li>
+                <li>Displaying a notice in the app (for significant changes)</li>
+            </ul>
+        </section>
+
+        <section id="internet-permissions">
+            <h2>Internet Permissions</h2>
+            <p>SecureSets requires internet permission for the following purposes:</p>
+            <ul>
+                <li><strong>Displaying advertisements</strong> via Google AdMob</li>
+            </ul>
+            <p>Your workout data and personal information remain offline and are never transmitted over the internet.</p>
+        </section>
+
+        <section id="security">
+            <h2>Security</h2>
+            <p>While we do not collect data, we take the security of your local data seriously:</p>
+            <ul>
+                <li>Data is stored using platform-specific secure storage APIs</li>
+                <li>We follow security best practices in our code</li>
+                <li>We do not introduce vulnerabilities that could expose your local data</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>If you have questions about this Privacy Policy, please contact us:</p>
+                <p><strong>Email:</strong> <a href="mailto:lunavasoftware@gmail.com">lunavasoftware@gmail.com</a></p>
+            </div>
+        </section>
+
+        <section id="legal-compliance">
+            <h2>Legal Compliance</h2>
+            <p>This app complies with:</p>
+            <ul>
+                <li><strong>GDPR</strong> (General Data Protection Regulation) - EU</li>
+                <li><strong>CCPA</strong> (California Consumer Privacy Act) - USA</li>
+                <li><strong>PIPEDA</strong> (Personal Information Protection and Electronic Documents Act) - Canada</li>
+                <li>Other applicable privacy laws</li>
+            </ul>
+            <p>Compliance is straightforward because we do not collect any personal data.</p>
+        </section>
+
+        <section id="app-store-requirements">
+            <h2>App Store Requirements</h2>
+            <p>This privacy policy satisfies the requirements of:</p>
+            <ul>
+                <li><strong>Google Play Store</strong> - Data Safety section</li>
+                <li><strong>Apple App Store</strong> - App Privacy Details</li>
+            </ul>
+            <p>Both stores require privacy policies even for apps that don't collect data.</p>
+        </section>
+
+        <div class="summary">
+            <strong>Summary:</strong> SecureSets is a privacy-first, offline-only application. We do not collect, store, transmit, or share any of your data. Everything stays on your device, under your control.
+        </div>
+
+        <footer>
+            <p>&copy; 2025 SecureSets. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

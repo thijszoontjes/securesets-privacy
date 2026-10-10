@@ -155,7 +155,7 @@
     <div class="container">
         <header>
             <h1>Privacy Policy for SecureSets</h1>
-            <p class="last-updated"><strong>Last Updated:</strong> October 9, 2026</p>
+            <p class="last-updated"><strong>Last Updated:</strong> October 10, 2026</p>
         </header>
 
         <section id="introduction">
@@ -172,10 +172,12 @@
 
             <h3>What data stays on your device:</h3>
             <ul>
-                <li>Workout routines, custom exercises, training goals, excluded workout splits and completed or unfinished sessions</li>
+                <li>Workout routines, custom exercises, training goals, training days, available equipment, session length, excluded workout splits and completed or unfinished sessions</li>
+                <li>Optional body profile details: body weight, height and gender</li>
                 <li>App preferences such as theme and weight units</li>
                 <li>Purchase access cached by SecureSets and refreshed from Google Play</li>
             </ul>
+            <p>Body weight is used locally to show Pro lift-to-bodyweight ratios. Height and gender are profile details and do not currently affect workout generation or a strength score. These details are not sent to AdMob, Qwen, Hugging Face or SecureSets servers.</p>
 
             <h3>What SecureSets does not collect directly:</h3>
             <ul>
@@ -193,9 +195,9 @@
             <p>Training data is stored locally on your device using:</p>
             <ul>
                 <li><strong>SQLite</strong> - For routines, exercises and workout history</li>
-                <li><strong>AsyncStorage</strong> - For preferences, unfinished session drafts and locally cached purchase access</li>
+                <li><strong>AsyncStorage</strong> - For preferences, body profile details, unfinished session drafts and locally cached purchase access</li>
             </ul>
-            <p>SecureSets does not add a separate database-encryption layer. Protection of app data at rest depends on the device, operating system and backup settings. A backup exported from Settings can contain training records; the destination app or recipient handles that file under its own terms.</p>
+            <p>SecureSets does not add a separate database-encryption layer. Protection of app data at rest depends on the device, operating system and backup settings. A backup exported from Settings can contain training records, custom exercises, unfinished workout drafts, body profile details, theme and weight units; the destination app or recipient handles that file under its own terms.</p>
         </section>
 
         <section id="data-sharing">
@@ -221,7 +223,8 @@
             <ul>
                 <li><strong>Purpose:</strong> Display advertisements to support the app</li>
                 <li><strong>Information:</strong> Google may process device or advertising identifiers, app interactions, app information, performance and diagnostics data for advertising, fraud prevention, measurement or service operation, depending on consent, device settings and Google's policies.</li>
-                <li><strong>Your control:</strong> Use the in-app ad privacy choices where available. You can also purchase ad removal or active SecureSets Pro to disable ads.</li>
+                <li><strong>Placement:</strong> A full-screen ad may be considered after saving a routine, after leaving a completed-workout summary, or after every third 1RM calculation. A two-minute cooldown applies; ads are skipped when consent or a ready ad is unavailable.</li>
+                <li><strong>Your control:</strong> Use the in-app ad privacy choices where available. You can purchase ad removal or use active SecureSets Pro to disable ads.</li>
             </ul>
 
             <h3>Google Play Billing</h3>
@@ -272,11 +275,7 @@
 
         <section id="internet-permissions">
             <h2>Internet Permissions</h2>
-            <p>SecureSets requires internet permission for the following purposes:</p>
-            <ul>
-                <li><strong>Displaying advertisements</strong> via Google AdMob</li>
-            </ul>
-            <p>Training data is not sent to SecureSets servers. Google Play, AdMob, Expo and Hugging Face may receive information needed for the services described above. Workout preferences are processed locally when the offline model generates a plan.</p>
+            <p>SecureSets requires internet permission for advertising, Google Play purchase checks, app updates, and the optional offline model download. Workout records and body profile details are not sent to SecureSets servers. Google Play, AdMob, Expo and Hugging Face may receive information needed for the services described above. Workout preferences are processed locally when the offline model generates a plan.</p>
         </section>
 
         <section id="security">
@@ -298,7 +297,7 @@
         </section>
 
         <div class="summary">
-            <strong>Summary:</strong> SecureSets has no workout account or server. Training data stays on your device unless you export a backup. AdMob, Google Play Billing and Expo provide online services. If you choose to download Qwen, workout preferences are processed locally and the generated plan is not sent to the model provider.
+            <strong>Summary:</strong> SecureSets has no workout account or server. Training data and optional body profile details stay on your device unless you export a backup. AdMob, Google Play Billing and Expo provide online services. If you choose to download Qwen, workout preferences are processed locally and the generated plan is not sent to the model provider.
         </div>
 
         <footer>
